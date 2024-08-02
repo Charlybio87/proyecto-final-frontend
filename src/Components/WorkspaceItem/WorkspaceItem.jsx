@@ -12,7 +12,7 @@ const WorkspaceItem = ({ entorno }) => {
                     <span className='nombre-entorno'>{entorno.nombreEntorno}</span>
                     <div className='detalle-miembros'>
                         <div className='imagenes-miembros'>
-                            {entorno.miembros.slice(0, 4).map(miembro => (
+                            {entorno.miembros.slice(0, 3).map(miembro => (
                                 <img key={miembro.id} src={miembro.fotoPerfil} alt={miembro.nombreMiembro} />
                             ))}
                         </div>

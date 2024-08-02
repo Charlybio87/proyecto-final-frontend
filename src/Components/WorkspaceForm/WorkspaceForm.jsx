@@ -9,7 +9,7 @@ const WorkspaceForm = ({ onCreate, onCancel }) => {
         const nuevoEntorno = { 
             nombreEntorno, 
             nombreCanal,
-            fotoEntorno: '/assets/images/defaultImage.webp',
+            fotoEntorno: '/assets/images/workspaces/nuevo-workspace.png',
             miembros: []
     }
         onCreate(nuevoEntorno)

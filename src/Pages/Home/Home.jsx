@@ -10,8 +10,17 @@ const Home = () => {
 
     return (
         <div className='app-container'>
-            <Header/>
-            <WorkspacesContainer entornos={entornos}/>
+            <Header />
+            <main className='contenedor-main'>
+                <div className='content-wrapper'>
+                    <div className='div-saludo'>
+                        <img src="./assets/images/waving-hand.png" alt="Mano saludando" />
+                        <h1>¡Hola de nuevo!</h1>
+                    </div>
+                    <WorkspacesContainer entornos={entornos} />
+                </div>
+            </main>
+
         </div>
     )
 }

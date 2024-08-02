@@ -29,13 +29,13 @@
     align-items: center;
     width: 100px; 
     height: 100px; 
-    background-color: aqua;
+    background-color: #191A23;
     border-radius: 12px;
 }
 
 .imagen-entorno img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -48,8 +48,9 @@
 .nombre-entorno {
     display: block;
     font-size: 1.1rem;
+    color: #191A23;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 
@@ -73,8 +74,8 @@
 
 
 .cantidad-miembros {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 0.8rem;
+    color: #898989;
 }
 
 
@@ -82,12 +83,12 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #4CAF50; 
-    color: white;
+    background-color: #b9ff66; 
+    color: #191A23;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
-    cursor: pointer;
+    font-weight: 600;
     border-radius: 4px;
     text-align: center;
     margin-top: 15px;
@@ -95,5 +96,5 @@
 }
 
 .inciar-slack-btn:hover {
-    background-color: #45a049; 
+    background-color: #a5f051; 
 }

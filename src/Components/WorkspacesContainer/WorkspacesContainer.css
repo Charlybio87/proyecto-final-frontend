@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #191A23;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 900px;
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .workspaces-header {
@@ -17,9 +17,12 @@
     margin-bottom: 20px;
 }
 
-.workspaces-header h2 {
-    padding-bottom: 20px;
+.titulo-header {
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.3rem;
 }
+
 
 .lista-entornos {
     display: flex;
@@ -32,8 +35,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background-color: #f9f9f9; 
-    border: 1px solid #ddd; 
+    background-color: #f3f3f3; 
     border-radius: 4px; 
 }
 
@@ -43,17 +45,23 @@
     margin-top: 20px;
 }
 
+.crear-workspace-container p {
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
 .btn-crear-nuevo {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #b9ff66;
+    color: #191A23;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
     text-decoration: none;
 }
 
 .btn-crear-nuevo:hover {
-    background-color: #45a049;
+    background-color: #a5f051;
 }

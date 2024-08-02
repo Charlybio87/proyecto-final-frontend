@@ -7,7 +7,9 @@ const WorkspacesContainer = ({ entornos }) => {
     return (
         <div className='workspaces-container'>
             <div className='workspaces-header'>
-                <h2>Espacios de trabajo para juan123@gmail.com</h2>
+                <div className='titulo-header'>
+                <span>Espacios de trabajo para juan123@gmail.com</span>
+                </div>
                 <div className='lista-entornos'>
                     {entornos.map((entorno) => (
                         <WorkspaceItem key={entorno.id} entorno={entorno} />

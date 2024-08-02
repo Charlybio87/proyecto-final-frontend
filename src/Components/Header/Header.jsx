@@ -1,16 +1,16 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
         <header className='home-header'>
-            <div className='slack-logo'>
+            <nav className='header-nav'>
+            <div className='logo-container'>
                 <img src="./assets/images/slack-logo.png" alt="Logo de slack" />
             </div>
-            <div className='div-saludo'>
-                <img src="./assets/images/waving-hand.png" alt="Mano saludando" />
-                <h1>¡Hola de nuevo!</h1>
-            </div>
+            <button className='btn-crear-nuevo-header'><Link to='/workspace/new'>CREAR UN NUEVO ESPACIO DE TRABAJO</Link></button>
+            </nav>
         </header>
     )
 }
