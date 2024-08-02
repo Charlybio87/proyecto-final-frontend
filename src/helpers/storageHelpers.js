@@ -1,7 +1,7 @@
 import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces";
 
 // Guardar los entornos de trabajo en localStorage
-const guardarEntornosTrabajo = (entornos) => {
+export const guardarEntornosTrabajo = (entornos) => {
     localStorage.setItem('entornosTrabajo', JSON.stringify(entornos))
     return entornos
 }

@@ -6,8 +6,13 @@ const WorkspaceForm = ({ onCreate, onCancel }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        const nuevoEntorno = { nombreEntorno, nombreCanal }
-        ondeviceorientationabsolute(nuevoEntorno)
+        const nuevoEntorno = { 
+            nombreEntorno, 
+            nombreCanal,
+            fotoEntorno: '/assets/images/defaultImage.webp',
+            miembros: []
+    }
+        onCreate(nuevoEntorno)
     }
     return (
         <form className='form-nuevo-entorno' onSubmit={handleSubmit}>

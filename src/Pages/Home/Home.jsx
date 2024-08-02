@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../Context/GlobalContext'
-import HeaderAndLogo from '../../Components/HeaderAndLogo/HeaderAndLogo'
+import Header from '../../Components/Header/Header'
 import WorkspacesContainer from '../../Components/WorkspacesContainer/WorkspacesContainer'
-
+import './Home.css'
 
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div className='app-container'>
-            <HeaderAndLogo/>
+            <Header/>
             <WorkspacesContainer entornos={entornos}/>
         </div>
     )

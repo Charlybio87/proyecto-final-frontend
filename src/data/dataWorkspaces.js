@@ -1,11 +1,9 @@
-// Definición del usuario logueado
 export const USUARIO_LOGUEADO = {
     nombre: 'Juan',
     id: 99,
     foto: '/assets/images/profile-pictures/juan.avif'
 };
 
-// Datos de entornos de trabajo
 export const DATA_ENTORNOS_TRABAJO = [
     {
         nombreEntorno: 'Equipo Desarrollo',
@@ -196,7 +194,7 @@ export const DATA_ENTORNOS_TRABAJO = [
                         id: 602 
                     },
                     { 
-                        autor: USUARIO_LOGUEADO.nombre, 
+                        autor: 'Juan', 
                         contenido: '¿Hay algún material preparado para la campaña?', 
                         fecha: '2024-07-31', 
                         hora: '10:30', 
@@ -252,7 +250,7 @@ export const DATA_ENTORNOS_TRABAJO = [
                         id: 802 
                     },
                     { 
-                        autor: USUARIO_LOGUEADO.nombre, 
+                        autor: 'Juan', 
                         contenido: '¿Cómo está el rendimiento de las campañas actuales?', 
                         fecha: '2024-07-29', 
                         hora: '15:30', 

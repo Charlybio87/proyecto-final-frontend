@@ -1,10 +1,13 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { obtenerEntornosTrabajo } from '../helpers/storageHelpers'
+import { useNavigate } from "react-router-dom";
+import { obtenerEntornosTrabajo, guardarEntornosTrabajo } from '../helpers/storageHelpers'
+import { v4 as uuid } from 'uuid';
 
 export const GlobalContext = createContext()
 
 export const GlobalContextProvider = ({children}) => {
     const [entornos, setEntornos] = useState([])
+    const navigate = useNavigate()
 
         useEffect(() => {
             const datosEntornos = obtenerEntornosTrabajo()
@@ -12,13 +15,15 @@ export const GlobalContextProvider = ({children}) => {
         }, [])
 
         const handleCreate = (nuevoEntorno) => {
-            // Aca me falta logica para agregar el nuevo entorno a la lista de entornos
-            setEntornos(prevEntornos => [...prevEntornos, nuevoEntorno])
+            const nuevoEntornoconId = {...nuevoEntorno, id: uuid()}
+            const entornosActualizados = [...entornos, nuevoEntornoconId]
+            setEntornos(entornosActualizados)
+            guardarEntornosTrabajo(entornosActualizados)
+            navigate('/')
         }
 
         const handleCancel = () => {
-
-            // Aca me falta la logica para manejar la cancelacion
+            navigate('/')
         }
 
     return (

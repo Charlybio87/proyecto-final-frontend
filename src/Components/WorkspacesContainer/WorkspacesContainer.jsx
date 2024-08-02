@@ -1,6 +1,7 @@
 import React from 'react'
 import WorkspaceItem from '../WorkspaceItem/WorkspaceItem'
 import { Link } from 'react-router-dom'
+import './WorkspacesContainer.css'
 
 const WorkspacesContainer = ({ entornos }) => {
     return (
@@ -12,7 +13,6 @@ const WorkspacesContainer = ({ entornos }) => {
                         <WorkspaceItem key={entorno.id} entorno={entorno} />
                     ))}
                 </div>
-                <button>INICIAR SLACK</button>
             </div>
             <div className='crear-workspace-container'>
                 <p>¿Quieres usar Slack con otro equipo?</p>
