@@ -1,12 +1,10 @@
 import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces";
 
-// Guardar los entornos de trabajo en localStorage
 export const guardarEntornosTrabajo = (entornos) => {
     localStorage.setItem('entornosTrabajo', JSON.stringify(entornos))
     return entornos
 }
 
-// Obtener los entornos de trabajo
 export const obtenerEntornosTrabajo = () => {
     const entornosGuardados = localStorage.getItem('entornosTrabajo')
     if (entornosGuardados) {
@@ -17,13 +15,11 @@ export const obtenerEntornosTrabajo = () => {
     }
 }
 
-// Guardar el usuario logueado en localStorage
 const guardarUsuarioLogueado = (usuario) => {
     localStorage.setItem('usuarioLogueado', JSON.stringify(usuario))
     return usuario
 }
 
-// Obtener el usuario logueado
 export const obtenerUsuarioLogueado = () => {
     const usuarioGuardado = localStorage.getItem('usuarioLogueado')
     if (usuarioGuardado) {
@@ -34,7 +30,6 @@ export const obtenerUsuarioLogueado = () => {
     }
 }
 
-// Agregar un nuevo mensaje a un canal
 export const agregarNuevoMensaje = (idEntorno, idCanal, nuevoMensaje) => {
 const entornos = obtenerEntornosTrabajo()
 const entorno = entornos.find(entorno => entorno.id === idEntorno)
@@ -48,13 +43,12 @@ if (entorno) {
 return entornos
 }
 
-// Obtener entorno por ID
 export const obtenerEntornoPorId = (idEntorno) => {
     const entornos = obtenerEntornosTrabajo()
     return entornos.find(entorno => entorno.id === idEntorno) || null
 }
 
-// Obtener canal por ID dentro del entorno
+
 export const obtenerCanalPorId = (idEntorno, idCanal) => {
     const entorno = obtenerEntornoPorId(idEntorno)
     if (entorno) {

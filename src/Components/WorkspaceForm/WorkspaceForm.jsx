@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './WorkspaceForm.css'
 
 const WorkspaceForm = ({ onCreate, onCancel }) => {
     const [nombreEntorno, setNombreEntorno] = useState('')
@@ -34,9 +35,9 @@ const WorkspaceForm = ({ onCreate, onCancel }) => {
                 placeholder='Introduce el nombre del canal'
                 required
             />
-            <div className='botones'>
-                <button type='submit'>Crear entorno</button>
-                <button type='button' onClick={onCancel}>Cancelar</button>
+            <div className='botones-form'>
+                <button type='submit' className='btn-crear-entorno'>Crear entorno</button>
+                <button type='button' onClick={onCancel} className='btn-cancelar'>Cancelar</button>
             </div>
         </form>
     )
