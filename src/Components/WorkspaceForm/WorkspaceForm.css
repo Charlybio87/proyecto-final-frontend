@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #191A23; 
+    background-color: #191A23;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -13,7 +13,7 @@
 .form-nuevo-entorno label {
     font-size: 1rem;
     font-weight: 400;
-    color: #ffffff; 
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
@@ -46,15 +46,21 @@
 }
 
 .botones-form .btn-crear-entorno {
-    background-color: #b9ff66; 
+    background-color: #b9ff66;
     color: #191A23;
 }
 
 .botones-form .btn-cancelar {
-    background-color: #898989; 
+    background-color: #898989;
     color: #fff;
 }
 
+.mensaje-error {
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    margin: 1px 0 10px 0;
+    display: block;
+}
 
 @media (max-width: 480px) {
     .form-nuevo-entorno {
@@ -81,8 +87,11 @@
         padding: 12px;
         font-size: 0.9rem;
     }
+    .mensaje-error{
+        font-size: 0.55rem;
+        margin-bottom: 6px;
+    }
 }
-
 
 @media (min-width: 481px) and (max-width: 768px) {
     .form-nuevo-entorno {
@@ -109,5 +118,9 @@
         width: auto;
         padding: 10px 20px;
         font-size: 1rem;
+    }
+    .mensaje-error {
+        font-size: 0.7rem;
+        margin-bottom: 8px;
     }
 }
