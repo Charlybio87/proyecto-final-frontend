@@ -1,3 +1,5 @@
+//storageHelpers.js:
+
 import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces";
 
 export const guardarEntornosTrabajo = (entornos) => {

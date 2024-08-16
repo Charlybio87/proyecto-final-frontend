@@ -1,6 +1,6 @@
 import React from 'react'
-import WorkspaceForm from '../../Components/WorkspaceForm/WorkspaceForm'
 import './NewWorkspace.css'
+import { WorkspaceForm } from '../../Components'
 
 const NewWorkspace = () => {
     return (

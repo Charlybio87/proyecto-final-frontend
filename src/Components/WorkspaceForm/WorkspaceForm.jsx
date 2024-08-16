@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { GlobalContext } from '../../Context/GlobalContext'
 import { validarForm } from '../../helpers/validationHelpers'
 import './WorkspaceForm.css'
 
 const WorkspaceForm = () => {
-    const { handleCreate, handleCancel } = useContext(GlobalContext)
+    const { handleCreate, handleCancel, usuarioLogueado } = useContext(GlobalContext)
     const [nombreEntorno, setNombreEntorno] = useState('')
     const [nombreCanal, setNombreCanal] = useState('')
     const [errors, setErrors] = useState({})
@@ -20,10 +20,23 @@ const WorkspaceForm = () => {
 
         if(Object.keys(formErrors).length === 0) {
             const nuevoEntorno = { 
-                nombreEntorno: formData.get('nombreEntorno'), 
-                nombreCanal: formData.get('nombreCanal'),
+                nombreEntorno: formData.get('nombreEntorno'),
+                descripcion: '',
                 fotoEntorno: '/assets/images/workspaces/nuevo-workspace.png',
-                miembros: []
+                miembros: [
+                    { 
+                        nombreMiembro: usuarioLogueado.nombre, 
+                        id: usuarioLogueado.id,
+                        fotoPerfil: usuarioLogueado.foto
+                    }
+                ],
+                canales: [
+                    {
+                        nombreCanal: formData.get('nombreCanal'),
+                        descripcion: '',
+                        mensajes: []
+                    }
+                ]
         }
         handleCreate(nuevoEntorno)
         }

@@ -1,7 +1,10 @@
 import React from 'react'
 import './WorkspaceItem.css'
 
-const WorkspaceItem = ({ entorno }) => {
+const WorkspaceItem = ({ entorno, id_workspace, id_canal, onIniciarSlack }) => {
+const handleIniciarSlack = () => {
+    onIniciarSlack(id_workspace, id_canal)
+}
     return (
         <div className='workspace-item-container'>
             <div className='entorno-item'>
@@ -17,12 +20,12 @@ const WorkspaceItem = ({ entorno }) => {
                             ))}
                         </div>
                         <span className='cantidad-miembros'>
-                            {entorno.miembros.length} miembros
+                        {entorno.miembros.length === 1 ? '1 miembro' : `${entorno.miembros.length} miembros`}
                         </span>
                     </div>
                 </div>
             </div>
-            <button className='inciar-slack-btn'>INICIAR SLACK</button>
+            <button className='inciar-slack-btn' onClick={handleIniciarSlack}>INICIAR SLACK</button>
         </div>
 
 

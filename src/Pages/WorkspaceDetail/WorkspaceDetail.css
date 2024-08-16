@@ -1,0 +1,12 @@
+.contenedor-workspace-detail {
+    background-color: #1e2126;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}

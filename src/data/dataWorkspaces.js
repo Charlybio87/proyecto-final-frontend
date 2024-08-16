@@ -1,3 +1,4 @@
+//dataWorkspaces.js:
 export const USUARIO_LOGUEADO = {
     nombre: 'Juan',
     id: 99,

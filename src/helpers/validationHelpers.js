@@ -8,6 +8,7 @@ export const obtenerErrorInput = (input, nombreCampo) => {
     }
     return null
 }
+
 export const validarForm = (nombreEntorno, nombreCanal) => {
     const errors = {}
 
