@@ -20,21 +20,26 @@ const ChannelDetail = ({ canal, entorno }) => {
     return (
         <div className='detalle-canal'>
             <header className='header-canal'>
+                <i className="bi bi-hash"></i>
                 <span>{canal.nombreCanal}</span>
             </header>
             <div className='mensajes'>
                 {canal.mensajes.map(mensaje => (
                     <div key={mensaje.id} className='mensaje' >
-                        <div className='header-mensaje'>
-                            <img width='100px' src={obtenerFotoAutor(mensaje.autor)} alt={`Foto de perfil de ${mensaje.autor}`} className='avatar-mensaje' />
-                            <span className='autor-mensaje'>{mensaje.autor}</span>
-                            <span className='hora-mensaje'>{mensaje.hora}</span>
+                        <div className='avatar-container'>
+                            <img src={obtenerFotoAutor(mensaje.autor)} alt={`Foto de perfil de ${mensaje.autor}`} className='avatar-mensaje' />
                         </div>
-                        <p className='texto-mensaje'>{mensaje.contenido}</p>
+                        <div className='contenido-mensaje'>
+                            <div className='mensaje-header'>
+                                <span className='autor-mensaje'>{mensaje.autor}</span>
+                                <span className='hora-mensaje'>{mensaje.hora}</span>
+                            </div>
+                            <p className='texto-mensaje'>{mensaje.contenido}</p>
+                        </div>
                     </div>
                 ))}
             </div>
-            <MessageInput onEnviarMensaje={handleEnviarMensaje}/>
+            <MessageInput onEnviarMensaje={handleEnviarMensaje} />
         </div>
     )
 }

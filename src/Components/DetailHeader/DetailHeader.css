@@ -2,14 +2,13 @@
     background-color: #1e1e2f;
     padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     border-bottom: 1px solid #2c2c3b;
 }
 
 .input-busqueda {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -18,8 +17,27 @@
     font-size: 16px;
     outline: none;
     transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
 }
 
-.input-busqueda:focus{
+.input-busqueda:focus {
     background-color: #3e3e5c;
+}
+
+.boton-salir {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    transition: background-color 0.3s;
+}
+
+.boton-salir:hover {
+    background-color: #ff6666;
 }

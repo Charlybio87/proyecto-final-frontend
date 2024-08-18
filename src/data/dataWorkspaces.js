@@ -319,7 +319,7 @@ export const DATA_ENTORNOS_TRABAJO = [
                         id: 802 
                     },
                     { 
-                        autor: 'Tomas', 
+                        autor: 'Tomás', 
                         contenido: 'Revisen el reporte de ventas antes de la reunión.', 
                         fecha: '2024-07-31', 
                         hora: '13:30', 
