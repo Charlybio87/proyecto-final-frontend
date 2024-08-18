@@ -2,7 +2,7 @@ import React from 'react'
 import './DetailHeader.css'
 import { useNavigate } from 'react-router-dom'
 
-const DetailHeader = ({ nombreEntorno }) => {
+const DetailHeader = ({ nombreEntorno, onSearch }) => {
     const navigate = useNavigate()
 
     const handleSalir = () => {
@@ -15,6 +15,7 @@ const DetailHeader = ({ nombreEntorno }) => {
             type='text' 
             className='input-busqueda'
             placeholder={`Buscar en ${nombreEntorno}`}
+            onChange={(e) => onSearch(e.target.value)}
             />
             <button className='boton-salir' onClick={handleSalir}>Salir</button>
         </header>

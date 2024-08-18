@@ -52,28 +52,28 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Ana', 
                         contenido: '¿Alguna actualización sobre el proyecto?', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '09:00', 
                         id: 301 
                     },
                     { 
                         autor: 'Luis', 
                         contenido: 'Estamos trabajando en los últimos detalles.', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '09:15', 
                         id: 302 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: 'Hola a todos, ¿cómo va el proyecto?', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '09:30', 
                         id: 303 
                     },
                     { 
                         autor: 'Ana', 
                         contenido: 'Todo bien, gracias.', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '09:45', 
                         id: 304 
                     }
@@ -87,21 +87,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Luis', 
                         contenido: 'Encontré un bug en el módulo de login.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '16:00', 
                         id: 401 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: '¿Puedes proporcionar más detalles?', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '16:10', 
                         id: 402 
                     },
                     { 
                         autor: 'Ana', 
                         contenido: 'El bug fue solucionado en el último commit.', 
-                        fecha: '2024-07-30',
+                        fecha: '30/07/2024',
                         hora: '16:30', 
                         id: 403 
                     }
@@ -115,21 +115,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Carlos', 
                         contenido: '¿Qué piensan sobre el nuevo diseño?', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:00', 
                         id: 501 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: 'Me gusta, pero creo que hay margen para mejorar.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:15', 
                         id: 502 
                     },
                     { 
                         autor: 'Laura', 
                         contenido: 'Estoy de acuerdo con Juan, se pueden hacer algunos ajustes.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:30', 
                         id: 503 
                     }
@@ -183,21 +183,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Pedro', 
                         contenido: '¿Cuándo lanzamos la próxima campaña?', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '10:00', 
                         id: 601 
                     },
                     { 
                         autor: 'Valeria', 
                         contenido: 'Estamos planeando lanzarla la próxima semana.', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '10:15', 
                         id: 602 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: '¿Hay algún material preparado para la campaña?', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '10:30', 
                         id: 603 
                     }
@@ -211,21 +211,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Jorge', 
                         contenido: 'El evento de lanzamiento será el próximo mes.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '14:00', 
                         id: 701 
                     },
                     { 
                         autor: 'Natalia', 
                         contenido: 'Estamos esperando la confirmación del lugar.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '14:15', 
                         id: 702 
                     },
                     { 
                         autor: 'Valeria', 
                         contenido: '¿Necesitan ayuda con la promoción del evento?', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '14:30', 
                         id: 703 
                     }
@@ -239,21 +239,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Sofía', 
                         contenido: '¿Qué estrategias estamos implementando este trimestre?', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:00', 
                         id: 801 
                     },
                     { 
                         autor: 'Pedro', 
                         contenido: 'Estamos enfocándonos en marketing digital y SEO.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:15', 
                         id: 802 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: '¿Cómo está el rendimiento de las campañas actuales?', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '15:30', 
                         id: 803 
                     }
@@ -307,21 +307,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Raúl', 
                         contenido: 'Tenemos una reunión con un cliente importante mañana.', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '13:00', 
                         id: 801 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: '¿Qué temas vamos a tratar en la reunión?', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '13:15', 
                         id: 802 
                     },
                     { 
                         autor: 'Tomás', 
                         contenido: 'Revisen el reporte de ventas antes de la reunión.', 
-                        fecha: '2024-07-31', 
+                        fecha: '31/07/2024', 
                         hora: '13:30', 
                         id: 803 
                     }
@@ -335,21 +335,21 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Tomás', 
                         contenido: 'Las ventas han aumentado este mes.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '17:00', 
                         id: 901 
                     },
                     { 
                         autor: 'Victoria', 
                         contenido: 'Sí, y hemos superado nuestras metas.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '17:15', 
                         id: 902 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: 'Excelente trabajo, sigan así.', 
-                        fecha: '2024-07-30', 
+                        fecha: '30/07/2024', 
                         hora: '17:30', 
                         id: 903 
                     }
@@ -363,14 +363,14 @@ export const DATA_ENTORNOS_TRABAJO = [
                     { 
                         autor: 'Manuel', 
                         contenido: 'El reporte mensual está listo para revisión.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '11:00', 
                         id: 1001 
                     },
                     { 
                         autor: 'Juan', 
                         contenido: 'Voy a revisarlo ahora.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '11:15', 
                         id: 1002 
                     },
@@ -378,7 +378,7 @@ export const DATA_ENTORNOS_TRABAJO = [
                         
                         autor: 'Victoria', 
                         contenido: 'Asegúrate de incluir todos los datos relevantes.', 
-                        fecha: '2024-07-29', 
+                        fecha: '29/07/2024', 
                         hora: '11:30', 
                         id: 1003 
                     }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useGlobalContext } from '../../Context/GlobalContext'
 import { ChannelDetail, DetailHeader, SideBar, TabRail } from '../../Components'
@@ -8,6 +8,7 @@ import './WorkspaceDetail.css'
 const WorkspaceDetail = () => {
     const { entornos } = useGlobalContext()
     const { id_workspace, id_canal } = useParams()
+    const [searchTerm, setSearchTerm] = useState('')
 
     const entornoActual = entornos.find(workspace => String(workspace.id) === String(id_workspace))
 
@@ -21,13 +22,27 @@ const WorkspaceDetail = () => {
     if (!canal) {
         return <div>No hay canales disponibles</div>
     }
+
+    const handleSearch = (term) => {
+        setSearchTerm(term)
+    }
+
     return (
         <div className='contenedor-workspace-detail'>
-            <DetailHeader nombreEntorno={entornoActual.nombreEntorno} />
+            <DetailHeader 
+            nombreEntorno={entornoActual.nombreEntorno}
+            onSearch= {handleSearch}
+            />
             <div className='contenedor-principal'>
                 <TabRail entorno={entornoActual} />
-                <SideBar entorno={entornoActual} canalSeleccionado={canal.id} />
-                <ChannelDetail canal={canal} entorno={entornoActual} />
+                <SideBar entorno={entornoActual} 
+                canalSeleccionado={canal.id} 
+                />
+                <ChannelDetail 
+                canal={canal} 
+                entorno={entornoActual} 
+                searchTerm={searchTerm}
+                />
             </div>
         </div>
     );

@@ -1,5 +1,3 @@
-//storageHelpers.js:
-
 import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces";
 
 export const guardarEntornosTrabajo = (entornos) => {
@@ -57,4 +55,14 @@ export const obtenerCanalPorId = (idEntorno, idCanal) => {
         return entorno.canales.find(canal => canal.id === idCanal) || null
     }
     return null
+}
+
+export const agregarNuevoCanal = (idEntorno, nuevoCanal) => {
+    const entornos = obtenerEntornosTrabajo()
+    const entorno = entornos.find (entorno => entorno.id === idEntorno)
+    if (entorno) {
+        entorno.canales.push(nuevoCanal)
+        return guardarEntornosTrabajo(entornos)
+    }
+    return entornos
 }
