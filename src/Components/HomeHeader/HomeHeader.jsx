@@ -5,7 +5,7 @@ import { useGlobalContext } from '../../Context/GlobalContext'
 
 const Header = () => {
     const { handleCreateWorkspace } = useGlobalContext()
-    console.log(handleCreateWorkspace)
+
     return (
         <header className='home-header'>
             <nav className='header-nav'>
