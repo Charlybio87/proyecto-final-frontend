@@ -4,13 +4,13 @@ import { useGlobalContext } from '../../Context/GlobalContext'
 import './WorkspacesContainer.css'
 
 const WorkspacesContainer = ({ entornos, onIniciarSlack }) => {
-    const { handleCreateWorkspace } = useGlobalContext()
+    const { handleCreateWorkspace, usuarioLogueado } = useGlobalContext()
 
     return (
         <div className='workspaces-container'>
             <div className='workspaces-header'>
                 <div className='titulo-header'>
-                    <span>Espacios de trabajo para juan123@gmail.com</span>
+                    <span>Espacios de trabajo para {usuarioLogueado?.email || 'cargando...'} </span>
                 </div>
                 <div className='lista-entornos'>
                     {entornos.map((entorno) => {

@@ -1,8 +1,8 @@
-//dataWorkspaces.js:
 export const USUARIO_LOGUEADO = {
     nombre: 'Juan',
     id: 99,
-    foto: '/assets/images/profile-pictures/juan.avif'
+    foto: '/assets/images/profile-pictures/juan.avif',
+    email: 'juan123@gmail.com'
 };
 
 export const DATA_ENTORNOS_TRABAJO = [
