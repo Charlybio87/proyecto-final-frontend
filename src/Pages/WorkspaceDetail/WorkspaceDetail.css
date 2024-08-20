@@ -12,3 +12,10 @@
     flex: 1;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+        overflow: auto; 
+    }
+}

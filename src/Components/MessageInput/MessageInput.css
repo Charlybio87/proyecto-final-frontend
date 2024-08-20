@@ -109,3 +109,82 @@
 .barra-herramientas-msje {
     flex-shrink: 0;
 }
+
+
+@media (max-width: 768px) {
+    .formulario-mensaje {
+        padding: 8px;
+    }
+
+    .barra-formato i,
+    .grupo-herramientas i {
+        font-size: 16px;
+    }
+
+    .input-mensaje {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-mensaje::placeholder {
+        font-size: 12px;
+    }
+
+    .barra-herramientas-msje {
+        gap: 8px;
+    }
+
+    .boton-adjuntar {
+        font-size: 16px;
+        width: 28px;
+        padding: 4px;
+    }
+
+    .boton-enviar {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .separador {
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-mensaje {
+        padding: 6px;
+    }
+
+    .barra-formato i,
+    .grupo-herramientas i {
+        font-size: 14px;
+    }
+
+    .input-mensaje {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .input-mensaje::placeholder {
+        font-size: 10px;
+    }
+
+    .barra-herramientas-msje {
+        gap: 6px;
+    }
+
+    .boton-adjuntar {
+        font-size: 14px;
+        width: 24px;
+        padding: 3px;
+    }
+
+    .boton-enviar {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .separador {
+        height: 18px;
+    }
+}

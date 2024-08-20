@@ -102,3 +102,127 @@
     display: block;
 }
 
+
+@media (max-width: 480px) {
+    .tab-rail {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px; 
+    }
+
+    .main-menu {
+        flex-direction: row;
+        justify-content: space-around; 
+        width: calc(100% - 45px); 
+        margin-right: 5px; 
+    }
+
+    .menu-item,
+    .img-entorno,
+    .contenedor-foto-usuario-tr {
+        width: 35px; 
+        height: 35px; 
+        margin: 0 2px;
+    }
+
+    .menu-item i {
+        font-size: 16px; 
+    }
+
+    .menu-item span {
+        display: none;
+    }
+
+    .img-entorno img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .secondary-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-item {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile-item:hover .nombre-usuario-tr {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .tab-rail {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 60px);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .menu-item,
+    .img-entorno {
+        width: 60px;
+        height: 60px;
+        margin: 0 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-item i {
+        font-size: 24px;
+    }
+
+    .menu-item span {
+        display: 10px; 
+    }
+
+    .img-entorno img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    .secondary-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-item {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .contenedor-foto-usuario-tr {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .profile-item:hover .nombre-usuario-tr {
+        display: none;
+    }
+}

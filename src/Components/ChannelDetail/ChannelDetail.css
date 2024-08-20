@@ -68,6 +68,7 @@
     background-color: #222330;
     border-radius: 8px;
     color: #F3F3F3;
+    word-break: break-word;
 }
 
 .avatar-container {
@@ -123,4 +124,119 @@
     flex-shrink: 0;
 }
 
+@media (max-width: 768px) {
+    .detalle-canal {
+        padding: 15px;
+        overflow-y: auto; 
+    }
 
+    .detalle-canal::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+    
+    .detalle-canal::-webkit-scrollbar-thumb {
+        background-color: #9496B3;
+        border-radius: 10px;
+    }
+
+    .header-canal {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .header-canal .bi-hash {
+        font-size: 20px;
+    }
+
+    .mensajes {
+        margin-bottom: 10px;
+    }
+
+    .fecha {
+        font-size: 11px;
+        min-width: 80px;
+        height: 22px;
+        padding: 0 8px;
+    }
+
+    .mensaje {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .avatar-container {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .autor-mensaje {
+        font-size: 14px;
+    }
+
+    .hora-mensaje {
+        font-size: 9px;
+    }
+
+    .texto-mensaje {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalle-canal {
+        padding: 10px;
+        overflow-y: auto; 
+    }
+
+    .detalle-canal::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+    
+    .detalle-canal::-webkit-scrollbar-thumb {
+        background-color: #9496B3;
+        border-radius: 10px;
+    }
+    
+
+    .header-canal {
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    .header-canal .bi-hash {
+        font-size: 18px;
+    }
+
+    .fecha {
+        font-size: 10px;
+        min-width: 70px;
+        height: 20px;
+        padding: 0 6px;
+    }
+
+    .mensaje {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .avatar-container {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+
+    .autor-mensaje {
+        font-size: 12px;
+    }
+
+    .hora-mensaje {
+        font-size: 8px;
+    }
+
+    .texto-mensaje {
+        font-size: 11px;
+    }
+}

@@ -2,17 +2,61 @@
     width: 250px;
     background-color: #222330;
     color: #F3F3F3;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     border-top-left-radius: 15px;
+    transition: all 0.3 ease;
+    overflow: hidden;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3px;
+    background-color: #222330;
 }
 
 .nombre-entorno-sb {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
-    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu-toggle-btn {
+    background-color: transparent;
+    color: #F3F3F3;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.sidebar-content::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: #9496B3;
+    border-radius: 10px;
+}
+
+.menu-abierto .sidebar-content {
+    max-height: 500px;
 }
 
 .canales-span {
@@ -31,10 +75,11 @@
 .canal-item {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
 }
 
 
@@ -150,4 +195,70 @@
     font-size: 12px;
     margin-top: 10px;
     color: #ff4d4d;
+}
+
+@media (min-width: 769px) {
+    .menu-toggle-btn {
+        display: none; 
+    }
+
+    .side-bar {
+        width: 300px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px; 
+    }
+
+    .sidebar-content {
+        max-height: none; 
+    }
+
+    .side-bar:not(.menu-abierto) .sidebar-content {
+        overflow-y: hidden;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .side-bar {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    .menu-toggle-btn {
+        display: block; 
+    }
+
+    .menu-abierto .sidebar-content {
+        max-height: 500px; 
+    }
+
+    .side-bar:not(.menu-abierto) .sidebar-content {
+        overflow-y: hidden;
+    }
+
+    .nombre-entorno-sb{
+        font-size: 16px;
+    }
+
+    .canales-span {
+        font-size: 16px;
+    }
+
+    .canal-item a {
+        font-size: 14px;
+    }
+
+    .span-form {
+        font-size: 14px;
+    }
+    
+    .nuevo-canal-input {
+        font-size: 14px;
+    }
+    
+    .confirmar-btn,
+    .cancelar-btn {
+        font-size: 12px;
+    }
 }
