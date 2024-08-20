@@ -30,16 +30,6 @@
     overflow-y: auto;
 }
 
-.mensajes::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-}
-
-.mensajes::-webkit-scrollbar-thumb {
-    background-color: #9496B3;
-    border-radius: 10px;
-}
-
 .contenedor-fecha {
     display: flex;
     justify-content: center;
@@ -130,16 +120,6 @@
         overflow-y: auto; 
     }
 
-    .detalle-canal::-webkit-scrollbar {
-        width: 8px;
-        background-color: transparent;
-    }
-    
-    .detalle-canal::-webkit-scrollbar-thumb {
-        background-color: #9496B3;
-        border-radius: 10px;
-    }
-
     .header-canal {
         font-size: 18px;
         padding-bottom: 10px;
@@ -189,18 +169,7 @@
         padding: 10px;
         overflow-y: auto; 
     }
-
-    .detalle-canal::-webkit-scrollbar {
-        width: 8px;
-        background-color: transparent;
-    }
     
-    .detalle-canal::-webkit-scrollbar-thumb {
-        background-color: #9496B3;
-        border-radius: 10px;
-    }
-    
-
     .header-canal {
         font-size: 16px;
         padding-bottom: 8px;

@@ -27,7 +27,7 @@
     background-color: #191A23;
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 16px;
     border-radius: 15px;
     color: #ffffff;
     text-decoration: none;
@@ -62,7 +62,7 @@
 
     .btn-crear-nuevo-header {
         padding: 8px 16px;
-        font-size: 0.8rem;
+        font-size: 14px;
         border-radius: 14px;
     }
 }

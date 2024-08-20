@@ -216,12 +216,6 @@
         position: relative;
     }
 
-    .contenedor-foto-usuario-tr {
-        width: 50px;
-        height: 50px;
-    }
-
-
     .profile-item:hover .nombre-usuario-tr {
         display: none;
     }
