@@ -80,11 +80,10 @@
     color: #F3F3F3;
 }
 
-
-.canal-item a {
+.nombre-canal-sb {
     text-decoration: none;
     font-size: 16px;
-    color: #F3F3F3;
+    color: #F3F3F3; 
     flex-grow: 1;
 }
 
@@ -236,7 +235,7 @@
         font-size: 16px;
     }
 
-    .canal-item a {
+    .nombre-canal-sb {
         font-size: 14px;
     }
 

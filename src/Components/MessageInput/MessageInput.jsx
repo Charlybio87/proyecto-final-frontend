@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './MessageInput.css'
 
-
 const MessageInput = ({ onEnviarMensaje, nombreCanal }) => {
     const [mensaje, setMensaje] = useState('')
 
@@ -16,6 +15,7 @@ const MessageInput = ({ onEnviarMensaje, nombreCanal }) => {
             setMensaje('')
         }
     }
+    
     return (
         <form onSubmit={handleSubmit} className='formulario-mensaje'>
             <div className='contenedor-input-msje'>

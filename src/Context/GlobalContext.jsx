@@ -31,7 +31,6 @@ export const GlobalContextProvider = ({ children }) => {
         const entornosActualizados = [...entornos, nuevoEntornoconId]
         setEntornos(entornosActualizados)
         guardarEntornosTrabajo(entornosActualizados)
-
         navigate('/')
     }
 

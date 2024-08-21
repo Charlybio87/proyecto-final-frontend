@@ -54,12 +54,12 @@ const SideBar = ({ entorno, canalSeleccionado }) => {
                 <span className='canales-span'>Canales</span>
                 <ul className='lista-canales'>
                     {entorno.canales.map(canal => (
-                        <li key={canal.id} className={`canal-item ${canal.id === canalSeleccionado ? 'active' : ''}`}>
-                            <i className="bi bi-hash"></i>
-                            <Link to={`/workspace/${entorno.id}/${canal.id}`}>
-                                {canal.nombreCanal}
-                            </Link>
-                        </li>
+                        <Link to={`/workspace/${entorno.id}/${canal.id}`} key={canal.id} className='nombre-canal-sb'>
+                            <li className={`canal-item ${canal.id === canalSeleccionado ? 'active' : ''}`}>
+                                <i className="bi bi-hash"></i>
+                                <span>{canal.nombreCanal}</span>
+                            </li>
+                        </Link>
                     ))}
                     {!agregarNuevoCanal
                         ? (<li className='agregar-canal' onClick={handleAgregarCanal}>

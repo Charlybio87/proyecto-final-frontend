@@ -35,6 +35,7 @@ const ChannelDetail = ({ canal, entorno, searchTerm }) => {
     )
 
     let ultimaFecha = null
+    
     return (
         <div className='detalle-canal'>
             <header className='header-canal'>

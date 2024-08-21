@@ -54,7 +54,6 @@ const WorkspaceForm = () => {
                 placeholder='Introduce el nombre del entorno'
             />
             {formEnviado && errors.nombreEntorno && <span className='mensaje-error'>{errors.nombreEntorno}</span>}
-
             <label htmlFor="nombreCanal">Nombre del canal #:</label>
             <input
                 type="text"
@@ -65,7 +64,6 @@ const WorkspaceForm = () => {
                 placeholder='Introduce el nombre del canal'
             />
             {formEnviado && errors.nombreCanal && <span className='mensaje-error'>{errors.nombreCanal}</span>}
-
             <div className='botones-form'>
                 <button type='submit' className='btn-crear-entorno'>Crear entorno</button>
                 <button type='button' onClick={handleCancel} className='btn-cancelar'>Cancelar</button>

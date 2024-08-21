@@ -29,19 +29,22 @@ const WorkspaceDetail = () => {
 
     return (
         <div className='contenedor-workspace-detail'>
-            <DetailHeader 
-            nombreEntorno={entornoActual.nombreEntorno}
-            onSearch= {handleSearch}
+            <DetailHeader
+                nombreEntorno={entornoActual.nombreEntorno}
+                onSearch={handleSearch}
             />
             <div className='contenedor-principal'>
-                <TabRail entorno={entornoActual} />
-                <SideBar entorno={entornoActual} 
-                canalSeleccionado={canal.id} 
+                <TabRail
+                    entorno={entornoActual}
                 />
-                <ChannelDetail 
-                canal={canal} 
-                entorno={entornoActual} 
-                searchTerm={searchTerm}
+                <SideBar
+                    entorno={entornoActual}
+                    canalSeleccionado={canal.id}
+                />
+                <ChannelDetail
+                    canal={canal}
+                    entorno={entornoActual}
+                    searchTerm={searchTerm}
                 />
             </div>
         </div>

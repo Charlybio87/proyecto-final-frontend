@@ -1,6 +1,5 @@
 import React from 'react'
 import './HomeHeader.css'
-
 import { useGlobalContext } from '../../Context/GlobalContext'
 
 const Header = () => {

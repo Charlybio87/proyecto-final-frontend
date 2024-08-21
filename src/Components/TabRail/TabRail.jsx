@@ -4,6 +4,7 @@ import { USUARIO_LOGUEADO } from '../../data/dataWorkspaces'
 
 const TabRail = ({ entorno }) => {
     const miembroLogueado = entorno.miembros.find(miembro => miembro.id === USUARIO_LOGUEADO.id)
+
     return (
         <nav className='tab-rail'>
             <ul className='main-menu'>
@@ -37,7 +38,7 @@ const TabRail = ({ entorno }) => {
                 {miembroLogueado && (
                     <li key={miembroLogueado.id} className='profile-item'>
                         <div className='contenedor-foto-usuario-tr'>
-                            <img src={miembroLogueado.fotoPerfil} alt="Foto de perfil del usuario logueado" className='foto-usuario-tr' />
+                            <img src={miembroLogueado.fotoPerfil} alt="Foto de perfil del usuario logueado" className='foto-usuario-tr'/>
                         </div>
                         <span className='nombre-usuario-tr'>{miembroLogueado.nombreMiembro}</span>
                     </li>
