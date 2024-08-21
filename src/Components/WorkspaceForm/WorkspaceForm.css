@@ -76,6 +76,10 @@
         font-size: 14px;
     }
 
+    .form-nuevo-entorno input::placeholder {
+        font-size: 12px;
+    }
+
     .botones-form {
         flex-direction: column;
         align-items: center;

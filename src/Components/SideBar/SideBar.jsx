@@ -42,6 +42,10 @@ const SideBar = ({ entorno, canalSeleccionado }) => {
         setMenuDesplegado(!menuDesplegado)
     }
 
+    const handleCanalClick = () => {
+        setMenuDesplegado(false)
+    }
+
     return (
         <div className={`side-bar ${menuDesplegado ? 'menu-abierto' : ''}`}>
             <div className='sidebar-header'>
@@ -54,7 +58,12 @@ const SideBar = ({ entorno, canalSeleccionado }) => {
                 <span className='canales-span'>Canales</span>
                 <ul className='lista-canales'>
                     {entorno.canales.map(canal => (
-                        <Link to={`/workspace/${entorno.id}/${canal.id}`} key={canal.id} className='nombre-canal-sb'>
+                        <Link 
+                        to={`/workspace/${entorno.id}/${canal.id}`} 
+                        key={canal.id} 
+                        className='nombre-canal-sb'
+                        onClick={handleCanalClick}
+                        >
                             <li className={`canal-item ${canal.id === canalSeleccionado ? 'active' : ''}`}>
                                 <i className="bi bi-hash"></i>
                                 <span>{canal.nombreCanal}</span>
