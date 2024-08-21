@@ -12,7 +12,7 @@ export const obtenerErrorInput = (input, nombreCampo) => {
 export const validarForm = (nombreEntorno, nombreCanal) => {
     const errors = {}
 
-    const nombreEntornoError = obtenerErrorInput(nombreEntorno, 'entorno')
+    const nombreEntornoError = obtenerErrorInput(nombreEntorno, 'espacio')
     if (nombreEntornoError) errors.nombreEntorno = nombreEntornoError
 
     const nombreCanalError = obtenerErrorInput(nombreCanal, 'canal')
