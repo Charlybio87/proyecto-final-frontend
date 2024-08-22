@@ -38,11 +38,9 @@
     object-fit: cover;
 }
 
-
 .detalle-entorno {
     flex: 1; 
 }
-
 
 .nombre-entorno {
     display: block;
@@ -51,7 +49,6 @@
     font-weight: 600;
     margin-bottom: 8px;
 }
-
 
 .detalle-miembros {
     display: flex;
@@ -71,12 +68,10 @@
     object-fit: cover; 
 }
 
-
 .cantidad-miembros {
     font-size: 13px;
     color: #898989;
 }
-
 
 .inciar-slack-btn {
     position: absolute;

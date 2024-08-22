@@ -1,4 +1,4 @@
-import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces";
+import { DATA_ENTORNOS_TRABAJO, USUARIO_LOGUEADO } from "../data/dataWorkspaces"
 
 export const guardarEntornosTrabajo = (entornos) => {
     localStorage.setItem('entornosTrabajo', JSON.stringify(entornos))

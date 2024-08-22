@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { createContext, useContext, useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { obtenerEntornosTrabajo, guardarEntornosTrabajo, obtenerUsuarioLogueado, agregarNuevoMensaje, agregarNuevoCanal } from '../helpers/storageHelpers'
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from 'uuid'
 
 export const GlobalContext = createContext()
 

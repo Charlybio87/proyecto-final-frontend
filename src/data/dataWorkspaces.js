@@ -3,7 +3,7 @@ export const USUARIO_LOGUEADO = {
     id: 99,
     foto: '/assets/images/profile-pictures/juan.avif',
     email: 'juan123@gmail.com'
-};
+}
 
 export const DATA_ENTORNOS_TRABAJO = [
     {
@@ -386,4 +386,4 @@ export const DATA_ENTORNOS_TRABAJO = [
             }
         ]
     }
-];
+]
